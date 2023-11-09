@@ -2,8 +2,8 @@ import imgAPI from '~/public/images/imgAPI';
 
 const brand = {
   profile: {
-    name: 'Jena Doe',
-    title: 'UI designer',
+    name: 'Ekram Hossain',
+    title: 'Fronted Developer',
     desc: 'Luxiren Profile - React Single Landing Page Template',
     prefix: 'Luxiren',
     footerText: 'Luxiren Theme 2021',

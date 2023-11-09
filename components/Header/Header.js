@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Fade from '@mui/material/Fade';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/profile-logo.svg';
+import logo from '~/public/images/profile-logo.jpg';
 import routeLink from '~/public/text/link';
 import useStyles from './header-style';
 import Settings from '../Settings';
@@ -107,11 +107,12 @@ function Header(props) {
               <div className={classes.logo}>
                 {invert ? (
                   <Link href={curLang + routeLink.profile.home}>
-                    <img src={logo} alt="logo" />
+                    {/* <img src={logo} alt="logo" /> */}
+                    <img style={{ borderRadius: '50%' }} src={logo} alt="logo" />
                   </Link>
                 ) : (
                   <AnchorLink href="#home">
-                    <img src={logo} alt="logo" />
+                   <img style={{ borderRadius: '50%' }} src={logo} alt="logo" />
                   </AnchorLink>
                 )}
               </div>

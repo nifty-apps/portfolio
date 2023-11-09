@@ -13,11 +13,11 @@ const imgAPI = {
     '/images/avatars/pp_boy5.svg'
   ],
   photo: [
-    'https://via.placeholder.com/675x900/e1ad92/ffffff',
-    'https://via.placeholder.com/967x725/ea6d6d/ffffff',
-    'https://via.placeholder.com/1280x849/ea6db7/ffffff',
-    'https://via.placeholder.com/967x725/bb6dea/ffffff',
-    'https://via.placeholder.com/1048x701/6d6fea/ffffff',
+    'https://th.bing.com/th/id/R.a07150d08c8984150c7febf0e60a95e7?rik=tE3Mt162Uz6OfQ&riu=http%3a%2f%2fwww.skinnyswebworks.com%2fimages%2fwebsite-design-development-themes-017.jpg&ehk=ti4jnmUGXQBPohYDgp%2bqXot3h%2fh%2fZaCDXusgFmrMq4s%3d&risl=&pid=ImgRaw&r=0',
+    'https://th.bing.com/th/id/R.e0986d9b9b4b345054fbe8c91b705a9c?rik=fkPxcQrM2YAyMA&pid=ImgRaw&r=0',
+    'https://th.bing.com/th/id/OIP.rc2pj6GkRD9FrcoFMYeWWwHaEL?pid=ImgDet&rs=1',
+    'https://th.bing.com/th/id/R.ab3fd48131cb7dc9a005580f135497af?rik=lxZ6yDJH8M7wPQ&pid=ImgRaw&r=0',
+    'https://th.bing.com/th/id/R.3bbdea2c47b9c6746a1fbbbec1d636d9?rik=oZlctWz3KiD1Cg&pid=ImgRaw&r=0',
     'https://via.placeholder.com/1050x700/6dc0ea/ffffff',
     'https://via.placeholder.com/970x725/6deaa6/ffffff',
     'https://via.placeholder.com/1051x700/b8de27/ffffff',
@@ -29,15 +29,16 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   profile: [
-    'https://via.placeholder.com/1080x497/ffb2ad/757575',
-    'https://via.placeholder.com/270x345/dedede/757575',
+    'https://www.bacancytechnology.com/img/Dedicated-Developer-1/Dedicated-Developer-banner-1.png',
+    'https://imagetolink.com/ib/YNBKl88PU7.jpeg',
     '/images/profile/pc.jpg',
-    'https://via.placeholder.com/400x400/4e5467/FFFFFF',
-    'https://via.placeholder.com/400x266/2f5ef3/FFFFFF',
-    'https://via.placeholder.com/400x266/dedafd/757575',
-    'https://via.placeholder.com/400x400/ea6f23/FFFFFF',
-    'https://via.placeholder.com/400x400/b79136/FFFFFF',
-    'https://via.placeholder.com/400x266/94fbf7/757575',
+    'https://i.ibb.co/SPm5kTs/sports.png',//3
+    'https://i.ibb.co/MGzsbKT/image-gallery.png', // 4
+    'https://i.ibb.co/k86bf1d/resuarent.png', // 5
+    'https://i.ibb.co/tDbQj61/recipe.png',//6
+    'https://i.postimg.cc/8cXdnLP8/movie-track.png',
+    'https://i.postimg.cc/8cXdnLP8/movie-track.png',
+    'https://i.ibb.co/v4vrJRH/toys.png',
     '/images/profile/pc-dark.jpg',
   ]
 };

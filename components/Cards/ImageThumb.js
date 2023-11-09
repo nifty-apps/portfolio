@@ -7,6 +7,7 @@ import { useText } from '~/theme/common';
 import useStyles from './cards-style';
 
 export default function ImageThumb(props) {
+  console.log(props)
   const { classes, cx } = useStyles();
   const { classes: text } = useText();
   const {
@@ -33,7 +34,7 @@ export default function ImageThumb(props) {
       </div>
       <div className={classes.detail}>
         <Typography variant="h6" className={text.subtitle}>{title}</Typography>
-        <Link href="#">{link}</Link>
+        <Link href={link}>{link}</Link>
       </div>
     </Paper>
   );

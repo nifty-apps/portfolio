@@ -7,12 +7,14 @@ const galleryStyles = makeStyles({ uniqId: 'gallery' })((theme, _params, classes
   loaded: {},
   selected: {},
   filter: {
-    position: 'relative',
-    zIndex: 20,
     display: 'flex',
-    overflow: 'auto',
-    width: '100%',
+    justifyContent: 'center',
+    marginTop: theme.spacing(3),
+    flexWrap: 'wrap',
+    gap: theme.spacing(2), // Add gap property here
     padding: theme.spacing(3, 0),
+    margin: theme.spacing(3, 0),
+  
     [theme.breakpoints.down('md')]: {
       paddingTop: 0
     },

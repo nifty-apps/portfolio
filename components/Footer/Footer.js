@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Divider from '@mui/material/Divider';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/profile-logo.svg';
+import logo from '~/public/images/profile-logo.jpg';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './footer-style';
@@ -36,30 +36,32 @@ function Footer() {
               </Typography>
             </div>
             <div className={classes.socmed}>
-              <IconButton aria-label="Delete" className={classes.margin} size="small">
-                <i className="ion-logo-facebook" />
-              </IconButton>
-              <IconButton aria-label="Delete" className={classes.margin} size="small">
-                <i className="ion-logo-instagram" />
-              </IconButton>
-              <IconButton aria-label="Delete" className={classes.margin} size="small">
-                <i className="ion-logo-twitter" />
-              </IconButton>
-              <IconButton aria-label="Delete" className={classes.margin} size="small">
-                <i className="ion-logo-linkedin" />
-              </IconButton>
+            <IconButton aria-label="Delete" className={classes.margin} size="small">
+                      <a href="https://www.facebook.com/ekram.hossain.3705/" target="_blank" rel="noopener noreferrer">
+    <i className="ion-logo-facebook" />
+  </a>
+                      </IconButton>
+                      {/* <IconButton aria-label="Delete" className={classes.margin} size="small">
+                        <i className="ion-logo-twitter" />
+                      </IconButton> */}
+                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                        <i className="ion-logo-instagram" />
+                      </IconButton>
+                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                    <a href='https://www.linkedin.com/in/ekram117web-developer/' target="_blank"> <i className="ion-logo-linkedin" /></a>   
+                      </IconButton>
             </div>
             <div className={classes.contact}>
               <Typography className={text.paragraph}>
                 {t('profile-landing.footer_contact')}
                 <br />
-                +12 345 678 90
+                +8801949266628
               </Typography>
-              <Divider className={classes.divider} />
-              <Typography className={text.paragraph}>
-                {t('profile-landing.footer_hello')}
+              <Divider/>
+              <Typography >
+                {/* {t('profile-landing.footer_hello')} */}
                 <br />
-                jenadoe.skype
+                ekramhossain117@gmail.com
               </Typography>
             </div>
           </Grid>

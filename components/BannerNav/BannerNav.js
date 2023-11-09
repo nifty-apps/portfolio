@@ -13,6 +13,7 @@ import { useText } from '~/theme/common';
 import Settings from '../Settings';
 import useStyles from './banner-style';
 
+
 function BannerNav(props) {
   const theme = useTheme();
   const { classes: text } = useText();
@@ -40,7 +41,7 @@ function BannerNav(props) {
             <div className={classes.banner}>
               <div className={classes.cover}>
                 <div className={classes.figure}>
-                  <img src={brand.profile.cover} alt="cover" />
+                  <img  src={brand.profile.cover} alt="cover" />
                   <div className={classes.overlay} />
                 </div>
               </div>
@@ -56,7 +57,7 @@ function BannerNav(props) {
                 </Typography>
                 <Typography variant="h2" className={text.title}>
                   {t('profile-landing.banner_me')}
-                  &nbsp;Jena, UI Designer
+                  &nbsp;Ekram, Fronted Developer
                 </Typography>
                 {!isMobile && (
                   <Fragment>
@@ -64,17 +65,19 @@ function BannerNav(props) {
                       {t('profile-landing.banner_desc')}
                     </Typography>
                     <div className={classes.socmed}>
-                      <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className="ion-logo-facebook" />
+                    <IconButton aria-label="Delete" className={classes.margin} size="small">
+                      <a href="https://www.facebook.com/ekram.hossain.3705/" target="_blank" rel="noopener noreferrer">
+    <i className="ion-logo-facebook" />
+  </a>
                       </IconButton>
-                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                      {/* <IconButton aria-label="Delete" className={classes.margin} size="small">
                         <i className="ion-logo-twitter" />
-                      </IconButton>
+                      </IconButton> */}
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
                         <i className="ion-logo-instagram" />
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                        <i className="ion-logo-linkedin" />
+                    <a href='https://www.linkedin.com/in/ekram117web-developer/' target="_blank"> <i className="ion-logo-linkedin" /></a>   
                       </IconButton>
                     </div>
                   </Fragment>
