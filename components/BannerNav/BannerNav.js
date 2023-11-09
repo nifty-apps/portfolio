@@ -41,7 +41,7 @@ function BannerNav(props) {
             <div className={classes.banner}>
               <div className={classes.cover}>
                 <div className={classes.figure}>
-                  <img  src={brand.profile.cover} alt="cover" />
+                  {/* <img src={brand.profile.cover} alt="cover" /> */}
                   <div className={classes.overlay} />
                 </div>
               </div>
@@ -65,10 +65,10 @@ function BannerNav(props) {
                       {t('profile-landing.banner_desc')}
                     </Typography>
                     <div className={classes.socmed}>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <a href="https://www.facebook.com/ekram.hossain.3705/" target="_blank" rel="noopener noreferrer">
-    <i className="ion-logo-facebook" />
-  </a>
+                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                        <a href="https://www.facebook.com/ekram.hossain.3705/" target="_blank" rel="noopener noreferrer">
+                          <i className="ion-logo-facebook" />
+                        </a>
                       </IconButton>
                       {/* <IconButton aria-label="Delete" className={classes.margin} size="small">
                         <i className="ion-logo-twitter" />
@@ -77,7 +77,7 @@ function BannerNav(props) {
                         <i className="ion-logo-instagram" />
                       </IconButton>
                       <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <a href='https://www.linkedin.com/in/ekram117web-developer/' target="_blank"> <i className="ion-logo-linkedin" /></a>   
+                        <a href='https://www.linkedin.com/in/ekram117web-developer/' target="_blank"> <i className="ion-logo-linkedin" /></a>
                       </IconButton>
                     </div>
                   </Fragment>

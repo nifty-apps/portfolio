@@ -29,7 +29,7 @@ function Timeline() {
   };
 
   return (
-    <div className={classes.root}>
+    <div>
       <Container fixed={isDesktop}>
         <Grid container spacing={0}>
           <Grid item lg={2} xs={12}>

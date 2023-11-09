@@ -2,11 +2,12 @@ import { makeStyles } from 'tss-react/mui';
 
 const testiStyles = makeStyles({ uniqId: 'testi' })((theme, _params, classes) => ({
   root: {
-    backgroundImage: `linear-gradient(120deg, ${theme.palette.mode === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main})`,
+    backgroundImage: `linear-gradient(120deg, ${theme.palette.mode === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.secondary.light})`,
     padding: theme.spacing(10, 0),
-    color: theme.palette.common.white,
+    color: theme.palette.common.black,
     position: 'relative',
-    zIndex: 10
+    zIndex: 10,
+    borderRadius:'20px'
   },
   button: {},
   avatarWrap: {
