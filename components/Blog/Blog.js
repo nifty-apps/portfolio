@@ -14,36 +14,43 @@ import imgApi from '~/public/images/imgAPI';
 
 const blogData = [
   {
+    id: 1,
     img: imgApi.photo[0],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    title: 'Mastering Responsive Web Design',
+    desc: 'Explore the best practices and techniques for creating responsive web designs that look great on various devices.'
   },
   {
+    id: 2,
     img: imgApi.photo[1],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    title: 'Optimizing Performance in React.js Applications',
+    desc: 'Learn effective strategies to optimize the performance of your React.js applications, from code splitting to lazy loading.'
   },
   {
+    id: 3,
     img: imgApi.photo[2],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    title: 'CSS-in-JS: A Comprehensive Guide',
+    desc: 'Dive into the world of CSS-in-JS solutions and understand how they can enhance your styling workflow in front-end development.'
   },
   {
+    id: 4,
     img: imgApi.photo[3],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    title: 'Exploring the Latest Features in ESNext',
+    desc: 'Stay up-to-date with the newest features introduced in the latest ECMAScript versions, and how they can be leveraged in your projects.'
   },
   {
+    id: 5,
     img: imgApi.photo[4],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    title: 'Building Scalable and Maintainable React Components',
+    desc: 'Discover best practices and patterns for building scalable and maintainable React components to ensure a robust and flexible codebase.'
   },
   {
+    id: 6,
     img: imgApi.photo[5],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    title: 'The Future of Front-end: Trends to Watch',
+    desc: 'Get insights into the emerging trends and technologies shaping the future of front-end development, from WebAssembly to Progressive Web Apps.'
   },
 ];
+
 
 function Blog() {
   const slider = useRef(null);
@@ -98,7 +105,7 @@ function Blog() {
         <Typography gutterBottom className={text.paragraph}>
           {t('profile-landing.blog_desc')}
         </Typography>
-        <Button className={classes.link} color="primary" href="#">luxi-theme.blog.com</Button>
+        <Button className={classes.link} color="primary" href="#">ekram.blog.com</Button>
       </div>
       <div className={classes.sliderWrap}>
         <div className={classes.carousel}>
@@ -120,6 +127,7 @@ function Blog() {
                 <BlogPostCard
                   img={item.img}
                   title={item.title}
+                  id={item.id}
                   desc={item.desc}
                 />
               </div>

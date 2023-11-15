@@ -1,3 +1,4 @@
+const colore ="#f0f8ff"
 module.exports = {
   oceanBlue: {
     palette: {
@@ -72,9 +73,9 @@ module.exports = {
   joker: {
     palette: {
       primary: {
-        light: '#D1C4E9',
-        main: '#673AB7',
-        dark: '#311B92'
+        light: '#f8f4ff',
+        main: '#f8f4ff',
+        dark: '#f8f4ff'
       },
       secondary: {
         light: '#B2EBF2',
@@ -86,52 +87,59 @@ module.exports = {
   violet: {
     palette: {
       primary: {
-        light: '#F8BBD0',
-        main: '#EC407A',
-        dark: '#880E4F'
+        light:colore, // Mint Green
+        main: colore, // Material Blue
+        dark:colore, // Royal Blue
+
       },
       secondary: {
-        light: '#D1C4E9',
-        main: '#673AB7',
-        dark: '#311B92'
-      }
+        light:colore, // Light Blue
+        main: colore, // Cyan
+        dark:colore, // Teal
+
+      },
     }
+
   },
   violeta: {
     palette: {
       primary: {
-        light: '#E1BEE7',
-        main: '#9C27B0',
-        dark: '#6A1B9A'
+        light:colore, // Mint Green
+        main:colore, // Material Blue
+        dark:colore, // Royal Blue
+
       },
       secondary: {
-        light: '#DCEDC8',
-        main: '#8BC34A',
-        dark: '#558B2F'
-      }
+        light:colore, // Light Blue
+        main:colore, // Cyan
+        dark:colore, // Teal
+
+      },
     }
+
+
   },
   roseGold: {
     palette: {
       primary: {
-        light: '#FCE4EC',
-        main: '#EC407A',
-        dark: '#D81B60',
-        contrastText: '#fff',
+        light: '#006a4e',
+        main: '#006a4e',
+        dark: '#006a4e',
+        contrastText: '#006a4e',
       },
       secondary: {
         light: '#FFF8E1',
-        main: '#FFA000',
-        dark: '#FF6F00',
-        contrastText: '#fff',
+        main: '#006a4e',
+        dark: '#006a4e',
+        contrastText:'#006a4e',
       },
     },
   },
   deepBlue: {
     palette: {
       primary: {
-        light: '#E8EAF6',
-        main: '#3F51B5',
+        light: '#006a4e',
+        main: '#006a4e',
         dark: '#283593',
         contrastText: '#fff',
       },

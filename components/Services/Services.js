@@ -9,34 +9,46 @@ import { useText } from '~/theme/common';
 import Title from '../Title';
 import IconTextCard from '../Cards/IconText';
 import useStyle from './services-style';
-
 const services = [
   {
     icon: 'ion-ios-color-wand',
-    name: 'UI Interface Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    name: 'UI Design',
+    desc: 'Crafting intuitive and visually appealing user interfaces using modern design frameworks.'
   },
   {
     icon: 'ion-logo-dribbble',
-    name: 'Icon Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    name: 'Frontend Development',
+    desc: 'Building dynamic and responsive applications with React.js, Next.js, and state management.'
   },
   {
     icon: 'ion-ios-globe',
-    name: 'HTML Prototyping',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    name: 'API Integration',
+    desc: 'Integrating RESTful APIs and GraphQL for seamless data manipulation and user experiences.'
   },
   {
-    icon: 'ion-ios-camera',
-    name: 'Photo Editing',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    icon: 'ion-ios-code',
+    name: 'Code Quality',
+    desc: 'Ensuring high-quality code through best practices, reviews, and continuous integration.'
   },
   {
-    icon: 'ion-ios-snow',
-    name: 'Graphic Illustrations',
-    desc: 'Pellentesque ac  vel blandit nulla.'
-  }
+    icon: 'ion-logo-css3',
+    name: 'CSS Styling',
+    desc: 'Implementing creative and modern styles with CSS3, SCSS, and styling frameworks.'
+  },
+  {
+    icon: 'ion-logo-responsive',
+    name: 'Responsive Design',
+    desc: 'Creating designs that adapt seamlessly to various screens and devices for optimal experiences.'
+  },
+  {
+    icon: 'ion-logo-chrome',
+    name: 'Browser Compatibility',
+    desc: 'Ensuring smooth operation across different browsers for wider audience reach.'
+  },
 ];
+
+// Add more services as needed
+
 
 function Services() {
   const { classes, cx } = useStyle();

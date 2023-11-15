@@ -13,13 +13,13 @@ const counterStyles = makeStyles({ uniqId: 'counter' })(theme => ({
     }
   },
   counterItem: {
-    color: theme.palette.common.white,
+    color: theme.palette.common.black,
     [theme.breakpoints.up('sm')]: {
       paddingLeft: theme.spacing(5),
     },
     '& i': {
       marginRight: theme.spacing(2),
-      color: theme.palette.common.white,
+      color: theme.palette.common.black,
       fontSize: 40,
       lineHeight: '40px'
     }

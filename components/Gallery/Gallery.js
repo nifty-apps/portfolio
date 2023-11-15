@@ -9,71 +9,55 @@ import imgAPI from '~/public/images/imgAPI';
 import ImageThumbCard from '../Cards/ImageThumb';
 import Title from '../Title';
 import useStyle from './gallery-style';
+import { Link } from '@mui/material';
 
 const portfolio = [
   {
-    img: imgAPI.profile[4],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.profile[3],
+    title: 'Online Sports Acedamy',
+    link: 'https://school-65c7c.web.app/',
     size: 'short',
-    category: 'cat1'
+    category: 'fronted+backend'
   },
   {
-    img: imgAPI.profile[3],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat2'
+    img: imgAPI.profile[4],
+    title: 'Drag & Drop Gallery',
+    link: 'https://wondrous-creponne-1c7c55.netlify.app/',
+    size: 'short',
+    category: 'redux'
   },
   {
     img: imgAPI.profile[5],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    title: 'Online Restuarent System , pass: 121',
+    link: 'https://spontaneous-taffy-e8d872.netlify.app/',
     size: 'short',
-    category: 'cat3'
+    category: 'fronted+backend'
   },
   {
     img: imgAPI.profile[6],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    title: 'Recipe Hunter',
+    link: 'https://recipe-hunter-ad129.web.app/',
     size: 'long',
-    category: 'cat1'
+    category: 'fronted+backend'
   },
+
+
   {
     img: imgAPI.profile[8],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    title: 'Movie List Track ',
+    link: 'https://wondrous-pie-ba5426.netlify.app/',
     size: 'short',
-    category: 'cat2'
+    category: 'typescript+graphql+redux'
   },
   {
-    img: imgAPI.profile[7],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.profile[9],
+    title: 'Online Toy Markets',
+    link: 'https://toy-new1.web.app/toy',
     size: 'short',
-    category: 'cat3'
+    category: 'fronted+backend'
   },
-  {
-    img: imgAPI.profile[3],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat1'
-  },
-  {
-    img: imgAPI.profile[5],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat2'
-  },
-  {
-    img: imgAPI.profile[4],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat2'
-  },
+ 
+
 ];
 
 function Gallery() {
@@ -130,24 +114,24 @@ function Gallery() {
             All
           </Button>
           <Button
-            onClick={() => filterChildren('cat1')}
-            className={filter === 'cat1' ? classes.selected : ''}
+            onClick={() => filterChildren('fronted+backend')}
+            className={filter === 'fronted+backend' ? classes.selected : ''}
           >
-            Category 1
+          Fronted + Backend
           </Button>
           <Button
-            onClick={() => filterChildren('cat2')}
-            className={filter === 'cat2' ? classes.selected : ''}
+            onClick={() => filterChildren('redux')}
+            className={filter === 'redux' ? classes.selected : ''}
           >
-            Category 2
+           Redux
           </Button>
           <Button
-            onClick={() => filterChildren('cat3')}
-            className={filter === 'cat3' ? classes.selected : ''}
+            onClick={() => filterChildren('typescript+graphql+redux')}
+            className={filter === 'typescript+graphql+redux' ? classes.selected : ''}
           >
-            Category 3
+           Typescripts+Redux+Graphql
           </Button>
-          <Button
+          {/* <Button
             onClick={() => filterChildren('cat4')}
             className={filter === 'cat4' ? classes.selected : ''}
           >
@@ -158,45 +142,50 @@ function Gallery() {
             className={filter === 'cat5' ? classes.selected : ''}
           >
             Category 5
-          </Button>
+          </Button> */}
         </div>
         {!isMobile ? (
-          <Fragment>
-            <div className={classes.massonry}>
-              {data.map((item, index) => (
-                <div
-                  className={cx(classes.item, isLoaded && classes.loaded)}
-                  key={index.toString()}
-                  style={{ transitionDuration: index / 4 + 's' }}
-                >
-                  <ImageThumbCard
-                    img={item.img}
-                    title={item.title}
-                    link={item.link}
-                    size={item.size}
-                  />
-                </div>
-              ))}
-            </div>
-            {data.length < 1 && <Typography variant="button" component="p" align="center">{t('profile-landing.gallery_nodata')}</Typography>}
-          </Fragment>
-        ) : (
-          <Carousel {...settings}>
-            {data.map((item, index) => (
-              <div
-                className={classes.itemCarousel}
-                key={index.toString()}
-              >
-                <ImageThumbCard
-                  img={item.img}
-                  title={item.title}
-                  link={item.link}
-                  size={item.size}
-                />
-              </div>
-            ))}
-          </Carousel>
-        )}
+  <Fragment>
+    <div className={classes.massonry} >
+      {data.map((item, index) => (
+        <div
+          className={cx(classes.item, isLoaded && classes.loaded)}
+          key={index.toString()}
+          style={{ transitionDuration: index / 4 + 's' }}
+        >
+          <Link style={{color:'black'}} href={item.link} target="_blank" rel="noopener noreferrer">
+            <ImageThumbCard
+              img={item.img}
+              title={item.title}
+              link={item.link}
+              size={item.size}
+            />
+          </Link>
+        </div>
+      ))}
+    </div>
+    {data.length < 1 && <Typography variant="button" component="p" align="center">{t('profile-landing.gallery_nodata')}</Typography>}
+  </Fragment>
+) : (
+  <Carousel {...settings} >
+    {data.map((item, index) => (
+      <div
+        className={classes.itemCarousel}
+        key={index.toString()}
+      >
+        <Link  href={item.link} target="_blank" rel="noopener noreferrer">
+          <ImageThumbCard
+            img={item.img}
+            title={item.title}
+            link={item.link}
+            size={item.size}
+          />
+        </Link>
+      </div>
+    ))}
+  </Carousel>
+)}
+
       </Container>
     </div>
   );

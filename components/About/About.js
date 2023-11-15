@@ -27,27 +27,21 @@ function About() {
           <Grid item lg={9} xs={12}>
             <div className={classes.about}>
               <div className={classes.reward}>
-                <div className={classes.item}>
+                <div >
                   <figure>
-                    <img src="/images/profile/reward1.svg" alt="badge" />
+                    <img style={{width:'200px' , height:'100px',borderRadius: '14%'}} src="/images/profile/reward1.jpg" alt="badge" />
                   </figure>
-                  <Typography component="p" className={text.paragraph}>Special Mention</Typography>
-                  <Typography variant="h5" className={text.subtitle}>Awards</Typography>
+                  <Typography style={{marginLeft:'40px',color:'black',fontFamily:'sans-serif'}}  >1000++ problem solve</Typography>
+                  <Typography style={{marginLeft:'40px',color:'black',fontFamily:'sans-serif'}} variant="h5" className={text.subtitle}>Online Judge</Typography>
                 </div>
-                <div className={classes.item}>
+                <div >
                   <figure>
-                    <img src="/images/profile/reward2.svg" alt="badge" />
+                    <img  style={{width:'200px' , height:'100px',borderRadius: '14%'}} src="/images/profile/reward2.jpg" alt="badge" />
                   </figure>
-                  <Typography component="p" className={text.paragraph}>100k videos</Typography>
-                  <Typography variant="h5" className={text.subtitle}>Subscriber</Typography>
+                  <Typography style={{marginLeft:'40px',color:'black',fontFamily:'sans-serif'}}  >700++ problem solve</Typography>
+                  <Typography style={{marginLeft:'40px',color:'black',fontFamily:'sans-serif'}} variant="h5" className={text.subtitle}>Codeforces</Typography>
                 </div>
-                <div className={classes.item}>
-                  <figure>
-                    <img src="/images/profile/reward3.svg" alt="badge" />
-                  </figure>
-                  <Typography component="p" className={text.paragraph}>Best Filmography</Typography>
-                  <Typography variant="h5" className={text.subtitle}>Footage</Typography>
-                </div>
+             
               </div>
               {!isTablet && (
                 <Fragment>
@@ -72,7 +66,7 @@ function About() {
               )}
               <Paper className={classes.photo}>
                 <figure>
-                  <img src={brand.profile.avatar} alt="avatar" />
+                  <img style={{padding:'2px'}} src={brand.profile.avatar} alt="avatar" />
                 </figure>
                 <span className={classes.frame} />
               </Paper>

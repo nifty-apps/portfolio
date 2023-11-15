@@ -29,20 +29,22 @@ function Timeline() {
   };
 
   return (
-    <div className={classes.root}>
+    <div>
       <Container fixed={isDesktop}>
         <Grid container spacing={0}>
           <Grid item lg={2} xs={12}>
             {!isTablet && (
               <Typography variant="h2" className={classes.nameDeco}>
-                {brand.profile.name}
+                {/* {brand.profile.name} */}
+
+              
               </Typography>
             )}
           </Grid>
           <Grid item container spacing={3} md={12} lg={10}>
             <Grid item md={5} sm={6} xs={12}>
               <div className={classes.history}>
-                <Typography variant="h5" className={cx(classes.title, text.subtitle)}>
+                <Typography  variant="h5" className={cx(classes.title, text.subtitle)}>
                   {t('profile-landing.timeline_experience')}
                 </Typography>
                 <ul>
@@ -54,63 +56,25 @@ function Timeline() {
                       duration={0.3}
                     >
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Creative Director</Typography>
-                        <Typography gutterBottom>at Fourth Company</Typography>
-                        <Typography className={classes.time}>2015 - Present</Typography>
+                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Fronted Developer Intern</Typography>
+                        <Typography gutterBottom>at Nift It Solution</Typography>
+                        <Typography className={classes.time}>18-08-2023 - Present</Typography>
                       </div>
                     </ScrollAnimation>
-                  </li>
-                  <li>
-                    <ScrollAnimation
-                      animateOnce
-                      animateIn="fadeInLeftShort"
-                      offset={100}
-                      delay={300}
-                      duration={0.3}
-                    >
-                      <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>Senior UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Third Company</Typography>
-                        <Typography className={classes.time}>2013 - 2015</Typography>
-                      </div>
-                    </ScrollAnimation>
-                  </li>
-                  <li>
-                    <ScrollAnimation
-                      animateOnce
-                      animateIn="fadeInLeftShort"
-                      offset={200}
-                      delay={400}
-                      duration={0.3}
-                    >
-                      <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at Second Company</Typography>
-                        <Typography className={classes.time}>2012 - 2013</Typography>
-                      </div>
-                    </ScrollAnimation>
-                  </li>
-                  <li>
-                    <ScrollAnimation
-                      animateOnce
-                      animateIn="fadeInLeftShort"
-                      offset={300}
-                      delay={500}
-                      duration={0.3}
-                    >
-                      <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>UI/UX Designer</Typography>
-                        <Typography gutterBottom>at First Company</Typography>
-                        <Typography className={classes.time}>2009 - 2011</Typography>
-                      </div>
-                    </ScrollAnimation>
-                  </li>
+
+                   
+             </li>
+             <div>
+
+              <img style={{width:'350px', height:'650px' ,borderRadius:'20px'}} src='https://i.pinimg.com/originals/be/54/d4/be54d436daac3158360c69b39ae3fe3a.jpg' ></img>
+             </div>
                 </ul>
+
               </div>
             </Grid>
             <Grid item sm={6} xs={12}>
               <div className={classes.progress}>
-                <Typography variant="h5" className={cx(classes.title, text.subtitle)}>
+                <Typography  variant="h5" className={cx(classes.title, text.subtitle)}>
                   {t('profile-landing.timeline_skill')}
                 </Typography>
                 <ScrollAnimation
@@ -121,77 +85,149 @@ function Timeline() {
                   afterAnimatedIn={handlePlay}
                 >
                   <ul>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-color-wand" />
-                        <Typography variant="h6" className={text.subtitle2}>UI Interface Design</Typography>
-                      </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 80 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-logo-dribbble" />
-                        <Typography variant="h6" className={text.subtitle2}>Icon Design</Typography>
-                      </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 70 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-globe" />
-                        <Typography variant="h6" className={text.subtitle2}>HTML Prototyping</Typography>
-                      </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 60 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-camera" />
-                        <Typography variant="h6" className={text.subtitle2}>Photo Editing</Typography>
-                      </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 90 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                    <li>
-                      <div className={classes.textIcon}>
-                        <i className="ion-ios-snow" />
-                        <Typography variant="h6" className={text.subtitle2}>Graphic Illustrations</Typography>
-                      </div>
-                      <LinearProgress
-                        variant="determinate"
-                        value={play ? 80 : 0}
-                        classes={{
-                          root: classes.progressBg,
-                          bar: classes.bar
-                        }}
-                      />
-                    </li>
-                  </ul>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-ios-desktop" />
+      <Typography variant="h6" className={text.subtitle2}>Responsive Web Design</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 90 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-react" />
+      <Typography variant="h6" className={text.subtitle2}>React.js Development</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 85 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-html5" />
+      <Typography variant="h6" className={text.subtitle2}>HTML5 & CSS3</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 95 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-javascript" />
+      <Typography variant="h6" className={text.subtitle2}>JavaScript Development</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 90 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-redux" />
+      <Typography variant="h6" className={text.subtitle2}>Redux</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 70 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-nodejs" />
+      <Typography variant="h6" className={text.subtitle2}>Express.js</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 75 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-mongodb" />
+      <Typography variant="h6" className={text.subtitle2}>MongoDB</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 70 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-typescript" />
+      <Typography variant="h6" className={text.subtitle2}>TypeScript</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 85 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-graphql" />
+      <Typography variant="h6" className={text.subtitle2}>GraphQL</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 75 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+  <li>
+    <div className={classes.textIcon}>
+      <i className="ion-logo-git-branch" />
+      <Typography variant="h6" className={text.subtitle2}>Version Control (Git)</Typography>
+    </div>
+    <LinearProgress
+      variant="determinate"
+      value={play ? 80 : 0}
+      classes={{
+        root: classes.progressBg,
+        bar: classes.bar
+      }}
+    />
+  </li>
+</ul>
+
                 </ScrollAnimation>
               </div>
             </Grid>

@@ -33,19 +33,20 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
     }
   },
   overlay: {
-    backgroundImage: `linear-gradient(120deg, ${theme.palette.mode === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main})`,
-    opacity: 0.75,
+    backgroundImage: `linear-gradient(120deg, ${theme.palette.mode === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light})`,
+    opacity: 0.76,
     position: 'absolute',
     width: '100%',
     height: '100%',
     top: 0,
-    left: 0
+    left: 0,
+    borderRadius:'20px'
   },
   banner: {
     position: 'relative',
     padding: theme.spacing(10, 3, 0),
-    color: theme.palette.common.white,
-    height: 500,
+    color: theme.palette.common.black,
+    height: 450,
     [theme.breakpoints.down('md')]: {
       height: 420
     },
@@ -56,7 +57,7 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
       padding: theme.spacing(10),
     },
     '& h4': {
-      fontFamily: 'Times New Roman',
+      fontFamily: 'initial',
     },
   },
   text: {

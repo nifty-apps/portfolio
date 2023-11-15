@@ -36,9 +36,12 @@
     "header_testimonials": "testimonials",
     "header_blog": "blog",
     "header_contact": "contact",
-    "banner_greeting": "Hello World",
+    "banner_greeting": "Welcome to My Frontend World",
+
     "banner_me": "I am",
-    "banner_desc": "I create an efficient UI mobile or web design also UX research to make sure that I get what people needs and strategy for interaction design. ",
+    "banner_desc": "As a frontend developer, I craft responsive and intuitive web interfaces, bringing designs to life and enhancing user experiences. I'm dedicated to creating seamless, visually appealing websites that captivate users and deliver a delightful online journey.",
+
+
     "timeline_experience": "WORK EXPERIENCE",
     "timeline_skill": "SKILL AND EXPERTISE",
     "counter_completed": "Completed Project",

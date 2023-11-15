@@ -36,7 +36,7 @@ function Form() {
   };
 
   return (
-    <div className={classes.formWrap}>
+    <div className={classes.formWrap} style={{color:'black'}}>
       <Snackbar
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
         key="top right"
@@ -48,10 +48,10 @@ function Form() {
         }}
         message={<span id="message-id">Message Sent</span>}
       />
-      <Paper className={classes.formBox}>
+      <Paper className={classes.formBox} style={{color:'black'}}>
         <Grid container spacing={6}>
           <Grid item lg={5} xs={12}>
-            <Typography className={cx(classes.title, text.title)} variant="h3">
+            <Typography style={{color:'black'}} className={cx(classes.title, text.title)} variant="h3">
               {t('profile-landing.contact_title')}
             </Typography>
           </Grid>
@@ -92,7 +92,7 @@ function Form() {
                   value={values.message}
                 />
                 <div className={classes.btnArea}>
-                  <Button variant="contained" type="submit" color="primary" size="large">
+                  <Button variant="contained" type="submit" style={{color:'white' ,background:'#000039'}}size="large">
                     {t('profile-landing.form_send')}
                   </Button>
                 </div>

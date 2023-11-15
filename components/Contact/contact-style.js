@@ -1,4 +1,5 @@
 import { makeStyles } from 'tss-react/mui';
+import { black } from '../../theme/palette';
 
 const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
   formWrap: {
@@ -52,7 +53,7 @@ const contactStyles = makeStyles({ uniqId: 'contact' })(theme => ({
     '& span': {
       '& a': {
         textDecoration: 'none !important',
-        color: theme.palette.secondary.main
+        color:black
       }
     }
   },

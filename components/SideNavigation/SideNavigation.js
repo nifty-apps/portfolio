@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/profile-logo.svg';
+import logo from '~/public/images/profile-logo.jpg';
 import useStyles from './sidenav-style';
 import navMenu from './menu';
 
@@ -42,7 +42,8 @@ function SideNavigation() {
       <Container fixed>
         <nav className={classes.navMenu}>
           <AnchorLink href="#home" className={classes.logo}>
-            <img src={logo} alt="logo" />
+          <img style={{ borderRadius: '50%' }} src={logo} alt="logo" />
+
           </AnchorLink>
           <List component="nav" className={classes.menu}>
             <Scrollspy
