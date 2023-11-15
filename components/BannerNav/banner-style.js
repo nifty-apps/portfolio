@@ -33,7 +33,7 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
     }
   },
   overlay: {
-    backgroundImage: `linear-gradient(120deg, ${theme.palette.mode === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main})`,
+    backgroundImage: `linear-gradient(120deg, ${theme.palette.mode === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.mode === 'dark' ? theme.palette.primary.dark : theme.palette.primary.light})`,
     opacity: 0.76,
     position: 'absolute',
     width: '100%',

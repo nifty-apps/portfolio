@@ -15,12 +15,12 @@ export default function Testimonial(props) {
   } = props;
   return (
     <Paper className={classes.iconText}>
-      <div className={classes.icon}>
-        <span className={icon} />
+      <div style={{color:'black'}} className={classes.icon}>
+        <span style={{color:'black'}} className={icon} />
       </div>
-      <div className={classes.more}>
-        <Typography className={cx(classes.name, textStyle.paragraph)} variant="h6" display="block">{text}</Typography>
-        <Typography className={cx(classes.desc, textStyle.paragraph)} display="block">{desc}</Typography>
+      <div style={{color:'black'}} className={classes.more}>
+        <Typography style={{color:'black'}} className={cx(classes.name, textStyle.paragraph)} variant="h6" display="block">{text}</Typography>
+        <Typography style={{color:'black'}} className={cx(classes.desc, textStyle.paragraph)} display="block">{desc}</Typography>
       </div>
     </Paper>
   );

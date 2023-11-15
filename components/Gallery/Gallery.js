@@ -146,14 +146,14 @@ function Gallery() {
         </div>
         {!isMobile ? (
   <Fragment>
-    <div className={classes.massonry}>
+    <div className={classes.massonry} >
       {data.map((item, index) => (
         <div
           className={cx(classes.item, isLoaded && classes.loaded)}
           key={index.toString()}
           style={{ transitionDuration: index / 4 + 's' }}
         >
-          <Link href={item.link} target="_blank" rel="noopener noreferrer">
+          <Link style={{color:'black'}} href={item.link} target="_blank" rel="noopener noreferrer">
             <ImageThumbCard
               img={item.img}
               title={item.title}
@@ -167,13 +167,13 @@ function Gallery() {
     {data.length < 1 && <Typography variant="button" component="p" align="center">{t('profile-landing.gallery_nodata')}</Typography>}
   </Fragment>
 ) : (
-  <Carousel {...settings}>
+  <Carousel {...settings} >
     {data.map((item, index) => (
       <div
         className={classes.itemCarousel}
         key={index.toString()}
       >
-        <Link href={item.link} target="_blank" rel="noopener noreferrer">
+        <Link  href={item.link} target="_blank" rel="noopener noreferrer">
           <ImageThumbCard
             img={item.img}
             title={item.title}

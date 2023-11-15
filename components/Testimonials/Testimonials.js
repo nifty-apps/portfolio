@@ -90,7 +90,7 @@ function Testimonials() {
   }
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{color:'black'}}>
       <Popover
         id="mouse-over-popover"
         className={classes.popover}
@@ -109,20 +109,20 @@ function Testimonials() {
         }}
         onClose={handlePopoverClose}
       >
-        <div className={classes.paperBlock}>
+        <div className={classes.paperBlock} style={{color:'black'}}>
           <Typography gutterBottom display="block">
             {popupData.text}
           </Typography>
           <Typography variant="h6">
             {popupData.name}
           </Typography>
-          <Typography className={classes.title}>
+          <Typography className={classes.title} style={{color:'black'}}>
             {popupData.title}
           </Typography>
         </div>
       </Popover>
-      <Container>
-        <Title dark>
+      <Container style={{color:'black'}}>
+        <Title >
           {t('profile-landing.testi_title')}
           &nbsp;
           <strong>
@@ -132,6 +132,11 @@ function Testimonials() {
         <Grid container>
           <Grid item md={7} xs={12}>
             <div className={classes.worldMap}>
+              {/* <h1 className='text-center'>CLients Review</h1> */}
+
+              <div className='grid grid-cols'>
+
+              </div>
               {!isMobile ? (
                 <div className={classes.avatarWrap}>
                   {testiData.map((item, index) => (
@@ -203,7 +208,7 @@ function Testimonials() {
                   <Typography component="p" className={text.paragraph}>
                     {t('profile-landing.testi_desc')}
                   </Typography>
-                  <Button color="secondary" href="#contact" size="large" className={classes.button} variant="contained">
+                  <Button style={{color:'white',background:'#000039' }} href="#contact" size="large" className={classes.button} variant="contained">
                     {t('profile-landing.testi_button')}
                   </Button>
                 </div>

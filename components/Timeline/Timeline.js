@@ -44,7 +44,7 @@ function Timeline() {
           <Grid item container spacing={3} md={12} lg={10}>
             <Grid item md={5} sm={6} xs={12}>
               <div className={classes.history}>
-                <Typography variant="h5" className={cx(classes.title, text.subtitle)}>
+                <Typography  variant="h5" className={cx(classes.title, text.subtitle)}>
                   {t('profile-landing.timeline_experience')}
                 </Typography>
                 <ul>
@@ -74,7 +74,7 @@ function Timeline() {
             </Grid>
             <Grid item sm={6} xs={12}>
               <div className={classes.progress}>
-                <Typography variant="h5" className={cx(classes.title, text.subtitle)}>
+                <Typography  variant="h5" className={cx(classes.title, text.subtitle)}>
                   {t('profile-landing.timeline_skill')}
                 </Typography>
                 <ScrollAnimation

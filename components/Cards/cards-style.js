@@ -31,7 +31,8 @@ const cardsStyles = makeStyles({ uniqId: 'cards' })((theme, _params, classes) =>
       },
       [`& .${classes.icon}`]: {
         transform: 'scale(0.5)',
-        opacity: 0,
+        opacity: 0
+        ,
       }
     }
   },
@@ -41,7 +42,9 @@ const cardsStyles = makeStyles({ uniqId: 'cards' })((theme, _params, classes) =>
     '& span': {
       '&:before': {
         fontSize: 130,
-        background: `linear-gradient(120deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
+        background: `linear-gradient(120deg, #FFFFFF 0%, #FF0000 50%, #00FF00 100%)`,
+
+
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent'
       }

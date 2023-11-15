@@ -1,5 +1,7 @@
 import { makeStyles } from 'tss-react/mui';
 import imgAPI from '~/public/images/imgAPI';
+const secondaryColor = '#123524'; // Replace with your desired color hash code
+const primaryColor = '#8db600'; // Replace with your desired color hash code
 
 const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, classes) => ({
   root: {
@@ -36,7 +38,7 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
   title: {
     textTransform: 'uppercase',
     marginBottom: theme.spacing(3),
-    color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.dark,
+    color: theme.palette.mode === 'dark' ? 'white': 'dark',
   },
   time: {},
   history: {
@@ -138,7 +140,7 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
   },
   bar: {
     borderRadius: 10,
-    backgroundImage: `linear-gradient(120deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main});`,
+    backgroundImage: `linear-gradient(120deg, ${secondaryColor}, ${primaryColor})`
   },
 }));
 

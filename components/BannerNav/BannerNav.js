@@ -64,8 +64,8 @@ function BannerNav(props) {
                     <Typography variant="h5" className={text.subtitle2}>
                       {t('profile-landing.banner_desc')}
                     </Typography>
-                    <div className={classes.socmed}>
-                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                    <div >
+                      <IconButton aria-label="Delete" className={classes.margin} size="large">
                         <a href="https://www.facebook.com/ekram.hossain.3705/" target="_blank" rel="noopener noreferrer">
                           <i className="ion-logo-facebook" />
                         </a>
@@ -73,10 +73,10 @@ function BannerNav(props) {
                       {/* <IconButton aria-label="Delete" className={classes.margin} size="small">
                         <i className="ion-logo-twitter" />
                       </IconButton> */}
-                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                      <IconButton aria-label="Delete" className={classes.margin} size="large">
                         <i className="ion-logo-instagram" />
                       </IconButton>
-                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                      <IconButton aria-label="Delete" className={classes.margin} size="large">
                         <a href='https://www.linkedin.com/in/ekram117web-developer/' target="_blank"> <i className="ion-logo-linkedin" /></a>
                       </IconButton>
                     </div>

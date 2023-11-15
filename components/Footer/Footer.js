@@ -22,11 +22,11 @@ function Footer() {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <div className={classes.root}>
-      <Container maxWidth="lg" component="footer">
+    <div className={classes.root} style={{color:'black'}}>
+      <Container maxWidth="lg" component="footer"  style={{color:'black'}}>
         <Grid container spacing={6} direction={isMobile ? 'column-reverse' : 'row'}>
           <Grid item xs={12} md={5}>
-            <div className={classes.logo}>
+            <div className={classes.logo}  style={{color:'black'}}>
               <img src={logo} alt="logo" />
               <Typography variant="h3" className={text.title}>
                 {brand.profile.name}
@@ -35,8 +35,8 @@ function Footer() {
                 {brand.profile.title}
               </Typography>
             </div>
-            <div className={classes.socmed}>
-            <IconButton aria-label="Delete" className={classes.margin} size="small">
+            <div style={{color:'black'}}>
+            <IconButton aria-label="Delete" className={classes.margin} size="large">
                       <a href="https://www.facebook.com/ekram.hossain.3705/" target="_blank" rel="noopener noreferrer">
     <i className="ion-logo-facebook" />
   </a>
@@ -44,15 +44,15 @@ function Footer() {
                       {/* <IconButton aria-label="Delete" className={classes.margin} size="small">
                         <i className="ion-logo-twitter" />
                       </IconButton> */}
-                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                      <IconButton aria-label="Delete" className={classes.margin} size="large">
                         <i className="ion-logo-instagram" />
                       </IconButton>
-                      <IconButton aria-label="Delete" className={classes.margin} size="small">
+                      <IconButton aria-label="Delete" className={classes.margin}  size="large">
                     <a href='https://www.linkedin.com/in/ekram117web-developer/' target="_blank"> <i className="ion-logo-linkedin" /></a>   
                       </IconButton>
             </div>
-            <div className={classes.contact}>
-              <Typography className={text.paragraph}>
+            <div className={classes.contact} style={{color:'black'}}>
+              <Typography className={text.paragraph} style={{color:'black'}}>
                 {t('profile-landing.footer_contact')}
                 <br />
                 +8801949266628

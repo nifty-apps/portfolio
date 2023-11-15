@@ -28,13 +28,13 @@ export default function ImageThumb(props) {
     }
   };
   return (
-    <Paper className={cx(classes.imgThumb, setSize(size))}>
-      <div className={classes.figure}>
+    <Paper style={{color:'black'}} className={cx(classes.imgThumb, setSize(size))}>
+      <div style={{color:'black'}} className={classes.figure}>
         <div className={classes.img} style={{ backgroundImage: `url(${img})` }} />
       </div>
       <div className={classes.detail}>
-        <Typography variant="h6" className={text.subtitle}>{title}</Typography>
-        <Link href={link}>{link}</Link>
+        <Typography style={{color:'black'}} variant="h6" className={text.subtitle}>{title}</Typography>
+        <Link style={{color:'black'}} href={link}>{link}</Link>
       </div>
     </Paper>
   );
